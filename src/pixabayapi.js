@@ -14,7 +14,7 @@ export class PixabayAPI {
     });
     async getImage () {
         // const url = `${this.#BASE_URL}?${this.#searchParams}&q=${this.#query}&page=${this.#page}`;
-        const url = `https://pixabay.com/api?key=41032962-13a1f4b46a16f1c84256e5234&q="flower"&image_type="photo"&orientation="horizontal"&safesearch=true&per_page=40&page=1`;
+        const url = `https://pixabay.com/api?key=41032962-13a1f4b46a16f1c84256e5234&q=flower&image_type=photo&orientation=horizontal&safesearch=true&per_page=40&page=1`;
         try {
             const data = await axios (url);
             return data;
