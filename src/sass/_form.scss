@@ -1,0 +1,43 @@
+form {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #4056B4;
+    padding: 5px 0;
+    text-align: center;
+}
+.gallery {
+    width: 90%;
+    max-width: 1700px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 50px auto 0;
+}
+.photo-card {
+    width: calc((100% - 60px) / 4);
+}
+.photo-img {
+    width: 100%;
+    height: 80%;
+}
+.photo-img img {
+    width: 100%;
+    height: 100%;
+}
+.info {
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+}
+.info-item {
+    text-align: center;
+}
+.load-container {
+    text-align: center;
+    padding-bottom: 20px;
+}
+.load-more {
+    padding: 5px;
+}
