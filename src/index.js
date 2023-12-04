@@ -32,7 +32,6 @@ refs.button.addEventListener ("click", (event) => {
         }
         const markup = createGalleryCard(data.hits);
         refs.gallery.innerHTML = markup;
-    }).finally (()=> {
         refs.load.hidden = false;
     });
 });
@@ -47,7 +46,6 @@ refs.load.addEventListener ("click", () => {
         }
         const markup = createGalleryCard(data.hits);
         refs.gallery.insertAdjacentHTML ("beforeend", markup);
-    }).finally (()=> {
         refs.load.hidden = false;
     });
 });
